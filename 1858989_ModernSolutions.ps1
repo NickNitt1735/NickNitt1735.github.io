@@ -31,7 +31,7 @@ function Bamboozle($filePath, $scriptName) {
 $letterList = 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 $randomNumber = Get-Random -Maximum 26
 $letterUsed =  $letterList[$randomNumber]
-Write-Host "Now go look through the files in that folder and try to find a $letterUsed."
+Write-Host "Now go look through the files in that folder and try to find a $letterUsed." -ForegroundColor Red -BackgroundColor Yellow
 Write-Host ""
 $chosenFiles = Get-Item $filePath* -Exclude $scriptName -Filter "*$letterUsed*"
 
