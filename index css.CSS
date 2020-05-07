@@ -98,7 +98,7 @@ p.logo {
 }
 
 
-@media only screen and (min-width: 868px) {
+@media only screen and (min-width: 768px) {
 .info {
     display: flex;
     justify-content: space-evenly;
