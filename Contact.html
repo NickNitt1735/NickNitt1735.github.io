@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Contact css.CSS">
+    </head>
+<body>
+
+<ul class="nav">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="https://github.com/NickNitt1735" target="_blank">GITHUB</a></li>
+    <li><a href="influences.html">INFLUENCES</a></li>
+    <li><a href="#">CONTACT</a></li>
+</ul>
+
+<div class="logo">
+    <p class="logo">Nicholas Nittolo</p>
+</div>
+
+<div class="contactheader">
+    <p>Contact Information</p>
+</div>
+
+<form action="#">
+              
+    <label class="box1" for="name">Name: *required</label>
+    <input class="box2" type="text" name="name" required>
+                                   
+    <label class="box3" for="email">Email: *required</label>
+    <input class="box4" type="email" name="email" required>
+
+    <label class="box5" for="phonenumber">Phone number: (555-555-5555) *required</label>
+    <input class="box6" type="tel" name="phonenumber" required pattern="[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]">
+
+    <label class="box7" for="prefered-contact">Prefered contact method:</label>
+    <ul class="radial">
+        <li>
+          <input type="radio" id="f-option" name="selector">
+          <label for="f-option">Email</label>
+          
+          <div class="check"></div>
+        </li>
+        
+        <li>
+          <input type="radio" id="s-option" name="selector">
+          <label for="s-option">Phone number</label>
+          
+          <div class="check"><div class="inside"></div></div>
+        </li>
+        
+    </ul>
+
+    <label class="box9" for="province">Province: *required</label>
+    <select class="box10" name="provinces" required>
+        <option value="alberta">Alberta</option>
+        <option value="british-columbia">British Columbia</option>
+        <option value="manitoba">Manitoba</option>
+        <option value="new-brunswick">New Brunswick</option>
+        <option value="newfoundland-labrador">Newfoundland and Labrador</option>
+        <option value="nova-scotia">Nova Scotia</option>
+        <option value="ontario">Ontario</option>
+        <option value="p.e.i.">Prince Edward Island</option>
+        <option value="quebec" selected>Quebec</option>
+        <option value="saskatchewan">Saskatchewan</option>
+    </select>
+
+    <label class="box11" for="textbox">Optional message:</label>
+    <textarea class="box12" maxlength="1024" rows="5" placeholder="Max 1024 characters."></textarea>
+                                   
+    <input class="submitbutton" type="submit" value="Submit"></input>
+                                       
+</form>
+
+
+</body>
+
+</html>

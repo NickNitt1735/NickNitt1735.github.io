@@ -1,0 +1,319 @@
+body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(231, 230, 230);
+    color: rgb(12, 12, 12);
+    font-family: 'Times New Roman', sans-serif;
+}
+
+ul.nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: rgb(12, 12, 12);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    height: 80px;
+    list-style-type: none;
+}
+
+.nav li {
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    font-family: Arial, sans-serif;
+}
+.nav li a {
+    text-decoration: none;
+    color: rgb(163, 158, 158);
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    font-weight: 800;
+}
+
+.nav li a:hover {
+    background-color: rgb(163, 158, 158);
+    color: rgb(12, 12, 12);
+}
+
+.logo {
+    background-color: rgb(175, 174, 174);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+}
+
+p.logo {
+    color: rgb(12, 12, 12);
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Arial Black", sans-serif;
+}
+
+.contactheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+}
+
+.contactheader p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    padding: 2rem;
+    background: rgb(175, 174, 174);
+    margin-left: 20px;
+    margin-right: 20px;
+    border: rgb(175, 174, 174) solid 1px;
+    border-radius: 25px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+  
+form > * {
+    margin-bottom: 1rem;
+}
+
+ul.radial {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+.submitbutton {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submitbutton:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: rgb(12, 12, 12);
+    outline: none !important;
+}
+
+select:focus {
+    border-color: rgb(12, 12, 12);
+    outline: none !important;
+}
+
+textarea:focus {
+    border-color: rgb(12, 12, 12);
+    outline: none !important;
+}
+
+@media only screen and (min-width: 620px) and (max-width: 1023px) {
+form {
+    display: grid;
+    padding: 2rem;
+    background: rgb(175, 174, 174);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border: rgb(175, 174, 174) solid 1px;
+    border-radius: 25px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+label {
+    font-size: 35px;
+}
+
+li label {
+    font-size: 20px;
+}
+
+input {
+    height: 55px;
+    font-size: 30px;
+}
+
+li input {
+    height: 20px;
+}
+
+select {
+    height: 50px;
+    font-size: 30px;
+}
+      
+form > * {
+    margin-bottom: 1rem;
+}
+    
+ul.radial {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+}
+    
+.submitbutton {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    font-size: 25px;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+form {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background: rgb(175, 174, 174);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: rgb(175, 174, 174) solid 1px;
+    border-radius: 25px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    column-gap: 45px;
+}
+
+.box1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.box2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.box3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.box4 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.box5 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+}
+
+.box6 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+}
+
+.box7 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+/* .box8 = ul.radial */
+
+.box9 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.box10 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.box11 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+}
+
+.box12 {
+    grid-row: 6 / 8;
+    grid-column: 2 / 3;
+}
+
+/* .box11 = .submitbutton */
+
+select.box10 {
+    height: 55px;
+    font-size: 35px;
+}
+
+#f-option, #s-option{
+    height: 20px;
+    width: 20px;
+}
+    
+label {
+    font-size: 35px;
+}
+    
+li label {
+    font-size: 25px;
+}
+    
+input {
+    height: 55px;
+    font-size: 30px;
+}
+    
+li input {
+    height: 20px;
+}
+    
+select {
+    height: 50px;
+    font-size: 30px;
+}
+          
+form > * {
+    margin-bottom: 1rem;
+}
+        
+ul.radial {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+        
+.submitbutton {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+}
+    
+textarea {
+    font-size: 25px;
+}
+
+
+}
+
+
