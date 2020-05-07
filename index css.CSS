@@ -17,7 +17,7 @@ ul.nav {
     margin: 0;
     padding: 0;
     font-style: normal;
-    height: 80px;
+    height: 100px;
     list-style-type: none;
 }
 
@@ -32,9 +32,10 @@ ul.nav {
     list-style: none;
     text-decoration: none;
     display: block;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 50px;
+    padding-bottom: 51px;
     font-weight: 800;
+    font-size: 18px;
 }
 
 .nav li a:hover {
@@ -48,7 +49,7 @@ ul.nav {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    height: 120px;
+    height: 150px;
 }
 
 p.logo {
@@ -83,6 +84,8 @@ p.logo {
     margin-left: 20px;
     margin-right: 20px;
     color: rgb(12, 12, 12);
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .info h1 {
@@ -95,6 +98,7 @@ p.logo {
     margin-right: 10px;
     line-height: 1.5;
     font-family: 'Times New Roman', sans-serif;
+    font-size: 20px;
 }
 
 
@@ -132,9 +136,6 @@ p.logo {
 }
 
 @media only screen and (min-width: 1024px) {
-body {
-    grid-template-rows: auto auto auto 600px;
-}
 .info {
     display: flex;
     justify-content: space-evenly;
@@ -161,7 +162,7 @@ body {
     margin-right: 10px;
     width: fit-content;
     line-height: 1.5;
-    font-size: 75px;
+    font-size: 28px;
 }
 
 }
