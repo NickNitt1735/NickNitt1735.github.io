@@ -2,7 +2,7 @@ body {
     display: grid;
     margin: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 400px;
+    grid-template-rows: auto auto auto auto;
     background-color: rgb(231, 230, 230);
     color: rgb(12, 12, 12);
     font-family: Arial, sans-serif;
